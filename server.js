@@ -5,7 +5,7 @@ app.use(express.json());
 let victims = [];
 
 app.get('/', (req, res) => {
-    res.send('🫀 Бермудский треугольник работает!');
+    res.send('Бермудский треугольник работает!');
 });
 
 app.get('/api/victims', (req, res) => {
@@ -21,5 +21,5 @@ app.post('/api/data', (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`🫀 Сервер запущен на порту ${PORT}`);
+    console.log('Сервер запущен!');
 });
